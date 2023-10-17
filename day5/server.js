@@ -1,36 +1,3 @@
-// const express= require('express');
-// const mongoose=require('mongoose');
-// const bodyParser=require('body-parser');
-// const Mentor=require('./models/mentor')
-// const Student=require('./models/student')
-
-
-// const app=express();
-// const DB_URL='mongodb+srv://ibrahimfaizal1985:5zbeibah@cluster0.jmlgcwa.mongodb.net/'
-// const PORT =3000;
-// app.use(bodyParser.json());// for parsing json
-// //connect mongodb
-// mongoose.connect(DB_URL,{})
-// .then(()=>console.log("mongodb connected successfully"))
-// .catch((err)=>console.log("could not connect"));
-
-// //post method eto create mentor collection in atlas
-// app.post('/mentor', async (req,res)=>{
-//     try{
-//         const mentor= new Mentor(req.body);
-//         await mentor.save();
-//         res.send(mentor)
-
-//     }
-//     catch(error){
-//         res.status(400).send(error)
-//     }
-// })
-
-// app.listen(PORT,()=>{
-//     console.log(`server is running on port ${PORT}`);
-// })
-
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
